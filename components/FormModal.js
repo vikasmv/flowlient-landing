@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function FormModal({ show, onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Replace this with actual backend integration
+    // You can replace this with backend integration
     alert("Thank you! We received your information.");
     onClose();
   };
@@ -14,7 +14,7 @@ export default function FormModal({ show, onClose }) {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <div className="bg-white rounded-lg w-11/12 max-w-md p-6 relative">
         <button
-          className="absolute top-2 right-2 text-gray-500 font-bold"
+          className="absolute top-2 right-2 text-gray-500 font-bold text-xl"
           onClick={onClose}
         >
           ×
